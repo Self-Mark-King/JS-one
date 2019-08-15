@@ -5,4 +5,4 @@ alert(lastName);
 let bDay = prompt('what\'s your birthday?');
 let bol = confirm(`is your birthday?  ${bDay}`);
 console.log(typeof(bDay));
-let dateBDay = new date(bDay);
+alrt(`your birthday is ${bDay}`)
