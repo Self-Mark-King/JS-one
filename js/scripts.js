@@ -28,21 +28,21 @@
 // in class exercise 2
 // .................................
 
-let oneEight = confirm('Are you 18 or over?');  
-//  if (oneEight == false){
-//      alert('git outa here kid');
-//  }
+// let oneEight = confirm('Are you 18 or over?');  
+// //  if (oneEight == false){
+// //      alert('git outa here kid');
+// //  }
 
-function mayContinue(oneEight){
-    return(oneEight ? eighty() : alert('Your NOT 18!'));
-}
-mayContinue(oneEight);
+// function mayContinue(oneEight){
+//     return(oneEight ? eighty() : alert('Your NOT 18!'));
+// }
+// mayContinue(oneEight);
 
 
-function eighty(eightZero){
-    eightZero = confirm('Are you bewteen 18 and 80 years old?');
-    return(eightZero ? confirm('do you like Star Wars?') : confirm('Do you like plums?'));
-}
+// function eighty(eightZero){
+//     eightZero = confirm('Are you bewteen 18 and 80 years old?');
+//     return(eightZero ? confirm('do you like Star Wars?') : confirm('Do you like plums?'));
+// }
 
 // .............
 
@@ -167,20 +167,41 @@ const h1 = document.getElementById('greeting');
 // .............................
 // switch
 // .........................................
-// const askColor = prompt('pick a color: red, blue, orange')
-// switch(askColor){
-//     case 'red':
-//         h1.innerHTML = `you chose  ${askColor}`;
-//     break;
-//     case 'blue':
-//             h1.innerHTML = `you chose  ${askColor}`;
-//     break;
-//     case 'orange':
-//             h1.innerHTML = `you chose  ${askColor}`;
-//     break;
-//     default:
-//             h1.innerHTML = `you did not follow the rules`;
-// }
+const askColor = prompt('pick a color: red, blue, orange,yellow, green, pink, purple, black, white, grey')
+switch(askColor){
+    case 'red':
+        h1.innerHTML = `you chose  ${askColor}`;
+    break;
+    case 'blue':
+            h1.innerHTML = `you chose  ${askColor}`;
+    break;
+    case 'orange':
+            h1.innerHTML = `you chose  ${askColor}`;
+    break;
+    case 'yellow':
+        h1.innerHTML = `you chose  ${askColor}`;
+    break;
+    case 'green':
+        h1.innerHTML = `you chose  ${askColor}`;
+    break;
+    case 'pink':
+        h1.innerHTML = `you chose  ${askColor}`;
+    break;
+    case 'purple':
+        h1.innerHTML = `you chose  ${askColor}`;
+    break;
+    case 'black':
+        h1.innerHTML = `you chose  ${askColor}`;
+    break;
+    case 'white':
+        h1.innerHTML = `you chose  ${askColor}`;
+    break;
+    case 'grey':
+        h1.innerHTML = `you chose  ${askColor}`;
+    break;
+    default:
+            h1.innerHTML = `you did not follow the rules`;
+}
 
 // ..............................
 // fini 
