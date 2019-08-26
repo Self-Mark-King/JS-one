@@ -48,35 +48,115 @@
 // // console.log(myArray);
 // // let findPos = newArray
 
-// try it out
-let arrayOne = [
-    'star wars',
-    'han solo',
-    'luke skywalker'
-];
-let arrayTwo = [
-    '2016 election',
-    'clinton',
-    'trump'
-];
-let arrayThree = [
-    'planet tof the apes', 
-    'heston',
-    'man'
-];
-let arrayFour = [
-    'top five',
-    'chris rock'
-];
-let arrayFive = [
-    'movie',
-    'star'
-];
-let finalArray = [
-    arrayOne, arrayTwo, arrayThree, arrayFour, arrayFive
-];
-console.log(finalArray);
-alert(finalArray.length);
+// // try it out
+// let arrayOne = [
+//     'star wars',
+//     'han solo',
+//     'luke skywalker'
+// ];
+// let arrayTwo = [
+//     '2016 election',
+//     'clinton',
+//     'trump'
+// ];
+// let arrayThree = [
+//     'planet tof the apes', 
+//     'heston',
+//     'man'
+// ];
+// let arrayFour = [
+//     'top five',
+//     'chris rock'
+// ];
+// let arrayFive = [
+//     'movie',
+//     'star'
+// ];
+// let finalArray = [
+//     arrayOne, arrayTwo, arrayThree, arrayFour, arrayFive
+// ];
+// console.log(finalArray);
+// alert(finalArray.length);
+
+
+// // loops
+// let x = 10;
+// while (x<=10){
+//     console.log(x);
+//     x++
+// }
+
+// for (let i =0; i<20; i++) {
+//     console.log(i);
+// }
+
+// for (let i = 0; i < 10; i++) {
+//     if (i == 4){
+//         break;
+//     }
+//     console.log(i);
+// }
+// let i = 0;
+// do {
+//     console.log(i);
+//     i++
+// } while(i < 10);
+
+// let i = 0;
+
+// let seconeArray =[1,2,3,4,5]
+// seconeArray.forEach(function(x)){
+//     console.log('i am ' + x);
+// }
+//  let myString = 'HI'
+//  for (i of myString) {
+//      console.log(i);
+//  } 
+
+ 
+//  // 
+//  let people = [{
+//      firstName : 'Mark',
+//      lastName : 'King',
+//      age : 58,
+//  },{
+//      firstName : 'Greg',
+//      lastName : 'Smith'
+//  }];
+
+//  for (i in people){
+//      console.log(people[person]);
+//  } 
+
+let thisArray = [];
+
+var item = [];
+
+do {
+    let item = [prompt('Enter a to do task.')];
+    
+    // let item = new Array(item);
+    thisArray.push(item);
+    console.log(thisArray);
+} while (thisArray.length < 3);
+ 
+console.log(thisArray[0]);
+
+// var person = {fname:"John", lname:"Doe", age:25}; 
+
+// var text = "";
+// var x;
+// for (x in person) {
+//   text += person[x] + " ";
+// }
+
+for (x in thisArray) {
+    // thisArray.push(prompt('enter a length of time for the task'));
+    thisArray.push(prompt('enter a length of time for the task'));
+}
+
+console.log(thisArray[2]);
+console.log(thisArray);
 
 
 
