@@ -127,38 +127,93 @@
 //  for (i in people){
 //      console.log(people[person]);
 //  } 
+// ---------------- first try
+// let thisArray = [];
 
-let thisArray = [];
+// var item = [];
 
-var item = [];
-
-do {
-    let item = [prompt('Enter a to do task.')];
+// do {
+//     let item = [prompt('Enter a to do task.')];
     
-    // let item = new Array(item);
-    thisArray.push(item);
-    console.log(thisArray);
-} while (thisArray.length < 3);
+//     // let item = new Array(item);
+//     thisArray.push(item);
+//     console.log(thisArray);
+// } while (thisArray.length < 3);
  
-console.log(thisArray[0]);
+// console.log(thisArray[0]);
 
-// var person = {fname:"John", lname:"Doe", age:25}; 
+// // var person = {fname:"John", lname:"Doe", age:25}; 
 
-// var text = "";
-// var x;
-// for (x in person) {
-//   text += person[x] + " ";
+// // var text = "";
+// // var x;
+// // for (x in person) {
+// //   text += person[x] + " ";
+// // }
+
+// for (x in thisArray) {
+//     // thisArray.push(prompt('enter a length of time for the task'));
+//     thisArray[x].push(prompt('enter a length of time for the task'));
+// };
+
+// for (x in thisArray) {
+//     let time = x[1];
+//     console.log(time);
+// };
+
+// console.log(thisArray[2]);
+// console.log(thisArray);
+
+let item1 = [];
+let item2 = [];
+let item3 = [];
+
+
+item1.push(prompt('enter an item'));
+item2.push(prompt('enter an item'));
+item3.push(prompt('enter an item'));
+
+// console.log(item1, item2,item3);
+
+let thisArray = [item1,item2,item3];
+// console.log(thisArray);
+
+// for (obj in thisArray) {
+//     obj.push(prompt('enter a length'));
 // }
 
-for (x in thisArray) {
-    // thisArray.push(prompt('enter a length of time for the task'));
-    thisArray.push(prompt('enter a length of time for the task'));
+// thisArray.forEach(function(thisArray)){
+//     thisArray.push(prompt('enter a length'));
+// }
+
+item1.push(Number(prompt(`enter a length for ${item1}`)));
+item2.push(Number(prompt(`enter a length for ${item2}`)));
+item3.push(Number(prompt(`enter a length for ${item3}`)));
+
+console.log(`item 1 ${item1}`);
+console.log(`item 2 ${item2}`);
+console.log(`item 3 ${item3}`);
+
+// let longest = item1[1];
+// console.log(typeof(longest));
+
+// while (longest < item2 || item3){
+
+// }
+let longest = 0
+if (longest < item1[1]){
+    longest = item1[1];
+    item1.push('easy peasy');
+}
+if (longest < item2[1]){
+    longest = item2[1];
+    item2.push('easy peasy');
+}
+if (longest < item3[1]) {
+    longest = item3[1];
 }
 
-console.log(thisArray[2]);
-console.log(thisArray);
-
-
+console.log(`the longest item is ${longest}`);
+alert(`${item1[0]},${item2[0]}`);
 
 
 
