@@ -1,0 +1,11 @@
+.row{
+    background-color: #eee;
+}
+
+.content{
+    background-color: #aaa;
+    padding: 1em;
+    font-family: 'Courier New', Courier, monospace;
+    max-height: 100vh;
+
+}
