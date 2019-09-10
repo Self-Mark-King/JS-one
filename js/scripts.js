@@ -281,48 +281,70 @@ function createForm(){
     return element;
 }
 
-//append stuff function
-function appendStuff(){
-    thisForm.appendChild(lEmail);
+// //append stuff function
+// function appendStuff(appendTo, appendValue){
+//     thisForm.appendChild(lEmail);
+//     thisForm.appendChild(iEmail);
+//     thisForm.appendChild(lSubject);
+//     thisForm.appendChild(iSubject);
+//     thisForm.appendChild(lTextArea);
+//     thisForm.appendChild(iBody);
+//     thisForm.appendChild(button);
+//     }
+
+
+
+
+// //create inputs
+// const iEmail = globalFormElements('input','input','email','form-control','enter email address here');
+// const iSubject = globalFormElements('input', 'text', 'subject', 'form-control', 'Enter subject here');
+// const iBody = textAreaElement('message', 'Your message here', 'form-control','message',5,'');
+
+// // //create labels
+// const lEmail = labelGenerator('email','Lorem ipsum dolor sit  adipisicing elit. Debitis, dolor?');
+// const lSubject = labelGenerator('subject', 'Subject');
+// const lTextArea = labelGenerator('message', 'Message ');
+
+//create button
+// const button = document.createElement('button');
+// button.className = 'btn-primary btn';
+// button.setAttribute('type', 'submit');
+// button.innerText = 'Submit Now';
+
+//put stuff together
+// create form
+const thisForm = createForm();
+
+
+
+//wrap up and put elements into index
+
+
+function alltogether(){
+    //create labels
+const lEmail = labelGenerator('email','Lorem ipsum dolor sit  adipisicing elit. Debitis, dolor?');
+const lSubject = labelGenerator('subject', 'Subject');
+const lTextArea = labelGenerator('message', 'Message ');
+//create inputs
+const iEmail = globalFormElements('input','input','email','form-control','enter email address here');
+const iSubject = globalFormElements('input', 'text', 'subject', 'form-control', 'Enter subject here');
+const iBody = textAreaElement('message', 'Your message here', 'form-control','message',5,'');
+//create button
+const button = document.createElement('button');
+button.className = 'btn-primary btn';
+button.setAttribute('type', 'submit');
+button.innerText = 'Submit Now';
+thisForm.appendChild(lEmail);
     thisForm.appendChild(iEmail);
     thisForm.appendChild(lSubject);
     thisForm.appendChild(iSubject);
     thisForm.appendChild(lTextArea);
     thisForm.appendChild(iBody);
     thisForm.appendChild(button);
-    }
-
-
-// create form
-const thisForm = createForm();
-
-//create inputs
-const iEmail = globalFormElements('input','input','email','form-control','enter email address here');
-const iSubject = globalFormElements('input', 'text', 'subject', 'form-control', 'Enter subject here');
-const iBody = textAreaElement('message', 'Your message here', 'form-control','message',5,'');
-
-//create labels
-const lEmail = labelGenerator('email','Lorem ipsum dolor sit  adipisicing elit. Debitis, dolor?');
-const lSubject = labelGenerator('subject', 'Subject');
-const lTextArea = labelGenerator('message', 'Message ');
-
-//create button
-const button = document.createElement('button');
-button.className = 'btn-primary btn';
-button.setAttribute('type', 'submit');
-button.innerText = 'Submit Now';
-
-
-
-
-//put stuff together
-appendStuff();
-
-//wrap up and put elements into index
 let myelememt = document.getElementById('id1');
 myelememt.appendChild(thisForm);
-
-
+}
+alltogether();
 
 
 
